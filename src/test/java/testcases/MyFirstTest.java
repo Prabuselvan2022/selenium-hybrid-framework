@@ -19,16 +19,9 @@ public class MyFirstTest {
 		
 		driver.get("https://www.zoho.com");
 		driver.manage().window().maximize();
-		
 		System.out.println("browser launched successfully");
-		
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 		driver.findElement(By.xpath("//div[@class=\"head-sign-in zh_innr_nav\"]//div[@class=\"signupcontainer\"]//a[text()='Sign in']")).click();
-		
 		driver.quit();
-		
-		System.out.println("closed the browser ");
-		
-		
 	}
 }
